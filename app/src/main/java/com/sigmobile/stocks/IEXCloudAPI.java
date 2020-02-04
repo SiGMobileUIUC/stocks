@@ -1,4 +1,6 @@
 package com.sigmobile.stocks;
 
-public interface StockNewsAPI {
+
+public interface IEXCloudAPI {
+
 }
