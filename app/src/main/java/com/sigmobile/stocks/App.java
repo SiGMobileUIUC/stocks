@@ -21,11 +21,12 @@ public class App extends Application {
             return iexCloudAPI;
         }
 
-        Interceptor interceptor = new Interceptor() {
+        Interceptor interceptor = new Interceptor(){
             @Override
             public Response intercept(Chain chain) throws IOException {
                 Request request = chain.request().newBuilder()
-                        .addHeader("Authorization", "API_TOKEN_HERE")
+                        .addHeader("Authorization",
+                                "API Token:  ")
                         .build();
                 return chain.proceed(request);
             }
@@ -36,7 +37,7 @@ public class App extends Application {
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("STOCK_API_BASE_URL")
+                .baseUrl("https://cloud.iexapis.com/stable/stock/")
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
