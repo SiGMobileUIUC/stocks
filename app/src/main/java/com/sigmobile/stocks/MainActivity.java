@@ -27,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Quote> call, Response<Quote> response) {
                 Log.e("RESP", "onResponse: " + response.body());
+                String symbol = response.body().getSymbol();
+                String companyName = response.body().getCompanyName();
+                float latestPrice = response.body().getLatestPrice();
+                float previousClose = response.body().getPreviousClose();
+                System.out.println("The symbol is: " + symbol);
+                System.out.println("The company name is: " + companyName);
+                System.out.println("The latest price of " + symbol + " is: $" + latestPrice);
+                System.out.println("The previous close for " + symbol + " was $" + previousClose);
             }
 
             @Override
