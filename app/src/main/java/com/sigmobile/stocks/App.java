@@ -26,7 +26,7 @@ public class App extends Application {
             public Response intercept(Chain chain) throws IOException {
                 Request request = chain.request().newBuilder()
                         .addHeader("Authorization",
-                                "API Token: your api key here ")
+                                "API Token: pk_243b38b37f924b15b0eaaf0ab9a57d5f ")
                         .build();
                 return chain.proceed(request);
             }
