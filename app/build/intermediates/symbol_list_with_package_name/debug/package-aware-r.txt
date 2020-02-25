@@ -678,6 +678,7 @@ drawable tooltip_frame_light
 id ALT
 id CTRL
 id FUNCTION
+id IntradaySearchButton
 id META
 id SHIFT
 id SYM
@@ -753,6 +754,7 @@ id contentPanel
 id currentPriceOutput
 id custom
 id customPanel
+id dateOutput
 id decor_content_parent
 id default_activity_button
 id dialog_button
@@ -783,6 +785,7 @@ id listMode
 id list_item
 id message
 id middle
+id minuteOutput
 id multiply
 id nameOutput
 id never
@@ -791,6 +794,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notionalOutput
 id off
 id on
 id packed
@@ -860,6 +864,7 @@ id unchecked
 id uniform
 id up
 id useLogo
+id volumeOutput
 id withText
 id wrap
 id wrap_content

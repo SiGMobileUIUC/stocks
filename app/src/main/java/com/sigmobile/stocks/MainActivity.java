@@ -23,12 +23,21 @@ public class MainActivity extends AppCompatActivity {
         iexCloudAPI = App.getIEXCloudAPI();
 
         Button searchButton = findViewById(R.id.searchButton);
+        Button IntradaySearchButton = findViewById(R.id.IntradaySearchButton);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final EditText tickerEditText = findViewById(R.id.tickerEntry);
                 final String userTicker = tickerEditText.getText().toString().toUpperCase();
                 getQuoteRequest(userTicker);
+            }
+        });
+        IntradaySearchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final EditText intradayEditText = findViewById(R.id.tickerEntry);
+                final String userIntraday = intradayEditText.getText().toString().toUpperCase();
+                getIntradayRequest(userIntraday);
             }
         });
     }
@@ -68,24 +77,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Intraday> call, Response<Intraday> response) {
                 Log.e("RESP", "onResponse: " + response.body());
-                String symbol = response.body().getSymbol();
-                String companyName = response.body().getCompanyName();
-                float latestPrice = response.body().getLatestPrice();
-                float previousClose = response.body().getPreviousClose();
+                String date = response.body().getDate();
+                String minute = response.body().getMinute();
+                float volume = response.body().getVolume();
+                float notional = response.body().getNotional();
 
-                final TextView symbolOutput = findViewById(R.id.symbolOutput);
-                final TextView nameOutput = findViewById(R.id.nameOutput);
-                final TextView currentPriceOutput = findViewById(R.id.currentPriceOutput);
-                final TextView prevCloseOutput = findViewById(R.id.prevCloseOutput);
+                final TextView dateOutput = findViewById(R.id.dateOutput);
+                final TextView minuteOutput = findViewById(R.id.minuteOutput);
+                final TextView volumeOutput = findViewById(R.id.volumeOutput);
+                final TextView notionalOutput = findViewById(R.id.notionalOutput);
 
-                symbolOutput.setText("Ticker: " + symbol);
-                nameOutput.setText("Name: " + companyName);
-                currentPriceOutput.setText("Current Price: $" + Float.toString(latestPrice));
-                prevCloseOutput.setText("Close Price: $" + Float.toString(previousClose));
+                dateOutput.setText("Date: " + date);
+                minuteOutput.setText("Minute: " + minute);
+                volumeOutput.setText("Volume: " + Float.toString(volume));
+                notionalOutput.setText("Notional: " + Float.toString(notional));
             }
 
             @Override
-            public void onFailure(Call<Quote> call, Throwable t) {
+            public void onFailure(Call<Intraday> call, Throwable t) {
                 Log.e("ERR", "onFailure: " + t.getLocalizedMessage());
             }
         });
