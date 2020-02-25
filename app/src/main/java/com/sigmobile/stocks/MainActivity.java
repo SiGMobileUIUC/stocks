@@ -62,4 +62,33 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void getIntradayRequest(String Symbol) {
+        Call<Intraday> call = iexCloudAPI.getIntraday(Symbol);
+        call.enqueue(new Callback<Intraday>() {
+            @Override
+            public void onResponse(Call<Intraday> call, Response<Intraday> response) {
+                Log.e("RESP", "onResponse: " + response.body());
+                String symbol = response.body().getSymbol();
+                String companyName = response.body().getCompanyName();
+                float latestPrice = response.body().getLatestPrice();
+                float previousClose = response.body().getPreviousClose();
+
+                final TextView symbolOutput = findViewById(R.id.symbolOutput);
+                final TextView nameOutput = findViewById(R.id.nameOutput);
+                final TextView currentPriceOutput = findViewById(R.id.currentPriceOutput);
+                final TextView prevCloseOutput = findViewById(R.id.prevCloseOutput);
+
+                symbolOutput.setText("Ticker: " + symbol);
+                nameOutput.setText("Name: " + companyName);
+                currentPriceOutput.setText("Current Price: $" + Float.toString(latestPrice));
+                prevCloseOutput.setText("Close Price: $" + Float.toString(previousClose));
+            }
+
+            @Override
+            public void onFailure(Call<Quote> call, Throwable t) {
+                Log.e("ERR", "onFailure: " + t.getLocalizedMessage());
+            }
+        });
+    }
+
 }
