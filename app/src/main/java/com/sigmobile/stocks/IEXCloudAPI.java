@@ -1,5 +1,7 @@
 package com.sigmobile.stocks;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -11,5 +13,5 @@ public interface IEXCloudAPI {
     Call<Quote> getQuote(@Path("ticker") String ticker);
 
     @GET("{Symbol}/intraday-prices?token=" + APIKEY)
-    Call<Quote> getQuote1(@Path("Symbol") String Symbol);
+    Call<List<Intraday>> getIntraday(@Path("Symbol") String Symbol);
 }

@@ -8,6 +8,62 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/notionalOutput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:width="100dp"
+        android:text="Notional: "
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symbolOutput" />
+
+    <TextView
+        android:id="@+id/volumeOutput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:width="100dp"
+        android:text="Volume: "
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symbolOutput" />
+
+    <TextView
+        android:id="@+id/minuteOutput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:width="100dp"
+        android:text="Minute: "
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symbolOutput" />
+
+    <TextView
+        android:id="@+id/dateOutput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:width="100dp"
+        android:text="Date: "
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symbolOutput" />
+
+    <TextView
         android:id="@+id/prevCloseOutput"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -62,17 +118,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchButton" />
 
+
     <Button
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="108dp"
         android:width="100dp"
         android:background="@android:color/holo_blue_dark"
         android:gravity="center"
         android:text="Search"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/IntradaySearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:width="100dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="Intraday"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/drawPlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:width="100dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="Draw"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,4 +183,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ap="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <com.androidplot.xy.XYPlot
+            style="@style/APDefacto.Dark"
+            android:id="@+id/plot"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            ap:title="A Volume Plot"
+            ap:rangeTitle="range"
+            ap:domainTitle="domain"
+            ap:lineLabels="left|bottom"
+            ap:lineLabelRotationBottom="-45"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

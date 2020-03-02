@@ -142,6 +142,552 @@
     </declare-styleable><declare-styleable name="StateListDrawableItem">
         
         <attr name="android:drawable"/>
+    </declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.androidplot:androidplot-core:1.5.7$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\42026\.gradle\caches\transforms-2\files-2.1\7fb0a9017ee91f5b17b8f30d15cf458c\jetified-androidplot-core-1.5.7\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.androidplot:androidplot-core:1.5.7" from-dependency="true" generated-set="com.androidplot:androidplot-core:1.5.7$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\42026\.gradle\caches\transforms-2\files-2.1\7fb0a9017ee91f5b17b8f30d15cf458c\jetified-androidplot-core-1.5.7\res"><file path="C:\Users\42026\.gradle\caches\transforms-2\files-2.1\7fb0a9017ee91f5b17b8f30d15cf458c\jetified-androidplot-core-1.5.7\res\values\values.xml" qualifiers=""><attr format="enum" name="domainStepMode">
+        <enum name="subdivide" value="0"/>
+        <enum name="increment_by_val" value="1"/>
+        <enum name="increment_by_pixels" value="2"/>
+    </attr><attr format="enum" name="domainTitleAnchor">
+        <enum name="top_middle" value="0"/>
+        <enum name="left_top" value="1"/>
+        <enum name="left_middle" value="2"/>
+        <enum name="left_bottom" value="3"/>
+        <enum name="right_top" value="4"/>
+        <enum name="right_middle" value="5"/>
+        <enum name="right_bottom" value="6"/>
+        <enum name="bottom_middle" value="7"/>
+        <enum name="center" value="8"/>
+    </attr><attr format="enum" name="domainTitleHeightMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr format="enum" name="domainTitleHorizontalPositioning">
+        <enum name="absolute_from_left" value="0"/>
+        <enum name="absolute_from_right" value="1"/>
+        <enum name="absolute_from_center" value="2"/>
+        <enum name="relative_from_left" value="3"/>
+        <enum name="relative_from_right" value="4"/>
+        <enum name="relative_from_center" value="5"/>
+    </attr><attr format="enum" name="domainTitleVerticalPositioning">
+        <enum name="absolute_from_top" value="0"/>
+        <enum name="absolute_from_bottom" value="1"/>
+        <enum name="absolute_from_center" value="2"/>
+        <enum name="relative_from_top" value="3"/>
+        <enum name="relative_from_bottom" value="4"/>
+        <enum name="relative_from_center" value="5"/>
+    </attr><attr format="enum" name="domainTitleWidthMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr format="enum" name="graphAnchor">
+        <enum name="top_middle" value="0"/>
+        <enum name="left_top" value="1"/>
+        <enum name="left_middle" value="2"/>
+        <enum name="left_bottom" value="3"/>
+        <enum name="right_top" value="4"/>
+        <enum name="right_middle" value="5"/>
+        <enum name="right_bottom" value="6"/>
+        <enum name="bottom_middle" value="7"/>
+        <enum name="center" value="8"/>
+    </attr><attr format="enum" name="graphHeightMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr format="enum" name="graphHorizontalPositioning">
+        <enum name="absolute_from_left" value="0"/>
+        <enum name="absolute_from_right" value="1"/>
+        <enum name="absolute_from_center" value="2"/>
+        <enum name="relative_from_left" value="3"/>
+        <enum name="relative_from_right" value="4"/>
+        <enum name="relative_from_center" value="5"/>
+    </attr><attr format="enum" name="graphRotation">
+        <enum name="ninety_degrees" value="0"/>
+        <enum name="negative_ninety_degrees" value="1"/>
+
+        
+        <enum name="one_hundred_eighty_degrees" value="2"/>
+        <enum name="none" value="3"/>
+    </attr><attr format="enum" name="graphVerticalPositioning">
+        <enum name="absolute_from_top" value="0"/>
+        <enum name="absolute_from_bottom" value="1"/>
+        <enum name="absolute_from_center" value="2"/>
+        <enum name="relative_from_top" value="3"/>
+        <enum name="relative_from_bottom" value="4"/>
+        <enum name="relative_from_center" value="5"/>
+    </attr><attr format="enum" name="graphWidthMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr format="enum" name="legendAnchor">
+        <enum name="top_middle" value="0"/>
+        <enum name="left_top" value="1"/>
+        <enum name="left_middle" value="2"/>
+        <enum name="left_bottom" value="3"/>
+        <enum name="right_top" value="4"/>
+        <enum name="right_middle" value="5"/>
+        <enum name="right_bottom" value="6"/>
+        <enum name="bottom_middle" value="7"/>
+        <enum name="center" value="8"/>
+    </attr><attr format="enum" name="legendHeightMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr format="enum" name="legendHorizontalPositioning">
+        <enum name="absolute_from_left" value="0"/>
+        <enum name="absolute_from_right" value="1"/>
+        <enum name="absolute_from_center" value="2"/>
+        <enum name="relative_from_left" value="3"/>
+        <enum name="relative_from_right" value="4"/>
+        <enum name="relative_from_center" value="5"/>
+    </attr><attr format="enum" name="legendIconHeightMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr format="enum" name="legendIconWidthMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr format="enum" name="legendVerticalPositioning">
+        <enum name="absolute_from_top" value="0"/>
+        <enum name="absolute_from_bottom" value="1"/>
+        <enum name="absolute_from_center" value="2"/>
+        <enum name="relative_from_top" value="3"/>
+        <enum name="relative_from_bottom" value="4"/>
+        <enum name="relative_from_center" value="5"/>
+    </attr><attr format="enum" name="legendWidthMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr name="lineLabelAlignBottom">
+        <enum name="left" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="right" value="2"/>
+    </attr><attr name="lineLabelAlignLeft">
+        <enum name="left" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="right" value="2"/>
+    </attr><attr name="lineLabelAlignRight">
+        <enum name="left" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="right" value="2"/>
+    </attr><attr name="lineLabelAlignTop">
+        <enum name="left" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="right" value="2"/>
+    </attr><attr name="lineLabels">
+        <flag name="none" value="0"/>
+        <flag name="left" value="1"/>
+        <flag name="right" value="2"/>
+        <flag name="top" value="4"/>
+        <flag name="bottom" value="8"/>
+    </attr><attr format="enum" name="previewMode">
+        <enum name="line_and_point" value="0"/>
+        <enum name="candlestick" value="1"/>
+        <enum name="bar" value="2"/>
+    </attr><attr format="enum" name="rangeStepMode">
+        <enum name="subdivide" value="0"/>
+        <enum name="increment_by_val" value="1"/>
+        <enum name="increment_by_pixels" value="2"/>
+    </attr><attr format="enum" name="rangeTitleAnchor">
+        <enum name="top_middle" value="0"/>
+        <enum name="left_top" value="1"/>
+        <enum name="left_middle" value="2"/>
+        <enum name="left_bottom" value="3"/>
+        <enum name="right_top" value="4"/>
+        <enum name="right_middle" value="5"/>
+        <enum name="right_bottom" value="6"/>
+        <enum name="bottom_middle" value="7"/>
+        <enum name="center" value="8"/>
+    </attr><attr format="enum" name="rangeTitleHeightMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr format="enum" name="rangeTitleHorizontalPositioning">
+        <enum name="absolute_from_left" value="0"/>
+        <enum name="absolute_from_right" value="1"/>
+        <enum name="absolute_from_center" value="2"/>
+        <enum name="relative_from_left" value="3"/>
+        <enum name="relative_from_right" value="4"/>
+        <enum name="relative_from_center" value="5"/>
+    </attr><attr format="enum" name="rangeTitleVerticalPositioning">
+        <enum name="absolute_from_top" value="0"/>
+        <enum name="absolute_from_bottom" value="1"/>
+        <enum name="absolute_from_center" value="2"/>
+        <enum name="relative_from_top" value="3"/>
+        <enum name="relative_from_bottom" value="4"/>
+        <enum name="relative_from_center" value="5"/>
+    </attr><attr format="enum" name="rangeTitleWidthMode">
+        <enum name="absolute" value="0"/>
+        <enum name="relative" value="1"/>
+        <enum name="fill" value="2"/>
+    </attr><attr format="enum" name="renderMode">
+        <enum name="use_background_thread" value="0"/>
+        <enum name="use_main_thread" value="0"/>
+    </attr><color name="ap_black">#000</color><color name="ap_charcoal">#111</color><color name="ap_gray">#888</color><color name="ap_transparent">#00000000</color><color name="ap_white">#FFF</color><color name="off_white">#EEE</color><style name="APDefacto">
+        <item name="titleTextSize">20sp</item>
+        <item name="rangeTitleTextSize">13sp</item>
+        <item name="domainTitleTextSize">13sp</item>
+        <item name="graphMarginTop">20dp</item>
+        <item name="graphMarginBottom">40dp</item>
+        <item name="graphMarginLeft">15dp</item>
+        <item name="graphMarginRight">10dp</item>
+        <item name="domainLineThickness">1dp</item>
+        <item name="rangeLineThickness">1dp</item>
+        <item name="domainOriginLineThickness">2dp</item>
+        <item name="rangeOriginLineThickness">2dp</item>
+        <item name="legendTextSize">15sp</item>
+        <item name="legendIconHeight">15dp</item>
+        <item name="legendIconWidth">15dp</item>
+        <item name="legendHeight">25dp</item>
+        <item name="legendAnchor">right_bottom</item>
+        <item name="borderColor">@color/ap_transparent</item>
+        <item name="gridInsetTop">1dp</item>
+        <item name="gridInsetBottom">20dp</item>
+        <item name="gridInsetLeft">25dp</item>
+        <item name="gridInsetRight">1dp</item>
+        <item name="lineLabels">left|bottom</item>
+        <item name="lineLabelInsetTop">1dp</item>
+        <item name="lineLabelInsetBottom">10dp</item>
+        <item name="lineLabelInsetLeft">20dp</item>
+        <item name="lineLabelInsetRight">1dp</item>
+        <item name="lineLabelTextSizeTop">15sp</item>
+        <item name="lineLabelTextSizeBottom">15sp</item>
+        <item name="lineLabelTextSizeLeft">15sp</item>
+        <item name="lineLabelTextSizeRight">15sp</item>
+        <item name="lineLabelAlignLeft">right</item>
+        <item name="lineLabelAlignRight">left</item>
+        <item name="lineLabelAlignTop">left</item>
+        <item name="lineLabelAlignBottom">right</item>
+        <item name="lineLabelRotationBottom">-45</item>
+        <item name="lineLabelRotationTop">-45</item>
+        <item name="lineExtensionLeft">3dp</item>
+        <item name="lineExtensionBottom">3dp</item>
+    </style><style name="APDefacto.Dark">
+        <item name="android:background">@color/ap_black</item>
+        <item name="backgroundColor">@color/ap_black</item>
+        <item name="graphBackgroundColor">@color/ap_black</item>
+        <item name="gridBackgroundColor">@color/ap_charcoal</item>
+        <item name="domainLineColor">@color/off_white</item>
+        <item name="rangeLineColor">@color/off_white</item>
+        <item name="domainOriginLineColor">@color/off_white</item>
+        <item name="rangeOriginLineColor">@color/off_white</item>
+        <item name="lineLabelTextColorTop">@color/off_white</item>
+        <item name="lineLabelTextColorBottom">@color/off_white</item>
+        <item name="lineLabelTextColorLeft">@color/off_white</item>
+        <item name="lineLabelTextColorRight">@color/off_white</item>
+        <item name="titleTextColor">@color/ap_white</item>
+        <item name="domainTitleTextColor">@color/ap_white</item>
+        <item name="rangeTitleTextColor">@color/ap_white</item>
+        <item name="legendTextColor">@color/ap_white</item>
+    </style><style name="APDefacto.Light">
+        <item name="android:background">@color/off_white</item>
+        <item name="backgroundColor">@color/off_white</item>
+        <item name="graphBackgroundColor">@color/off_white</item>
+        <item name="gridBackgroundColor">@color/ap_white</item>
+        <item name="domainLineColor">@color/ap_gray</item>
+        <item name="rangeLineColor">@color/ap_gray</item>
+        <item name="lineLabelTextColorTop">@color/ap_charcoal</item>
+        <item name="lineLabelTextColorBottom">@color/ap_charcoal</item>
+        <item name="lineLabelTextColorLeft">@color/ap_charcoal</item>
+        <item name="lineLabelTextColorRight">@color/ap_charcoal</item>
+        <item name="domainOriginLineColor">@color/ap_charcoal</item>
+        <item name="rangeOriginLineColor">@color/ap_charcoal</item>
+        <item name="titleTextColor">@color/ap_black</item>
+        <item name="domainTitleTextColor">@color/ap_black</item>
+        <item name="rangeTitleTextColor">@color/ap_black</item>
+        <item name="legendTextColor">@color/ap_black</item>
+    </style><style name="FullScreenGraph">
+        <item name="graphMarginTop">0dp</item>
+        <item name="graphMarginBottom">0dp</item>
+        <item name="graphMarginLeft">0dp</item>
+        <item name="graphMarginRight">0dp</item>
+        <item name="graphHeightMode">fill</item>
+        <item name="graphWidthMode">fill</item>
+        <item name="graphHeight">0</item>
+        <item name="graphWidth">0</item>
+        <item name="domainLineThickness">1dp</item>
+        <item name="graphHorizontalPositioning">absolute_from_left</item>
+        <item name="graphVerticalPositioning">absolute_from_top</item>
+        <item name="rangeLineThickness">1dp</item>
+        <item name="graphAnchor">left_top</item>
+        <item name="graphHorizontalPosition">0dp</item>
+        <item name="graphVerticalPosition">0dp</item>
+        <item name="legendVisible">false</item>
+    </style><style name="FullScreenGraph.Minimalist">
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="domainLineExtension">0dp</item>
+        <item name="rangeLineExtension">0dp</item>
+        <item name="lineLabels">none</item>
+    </style><style name="FullScreenGraph.Minimalist.Dark">
+        <item name="domainLineColor">@color/ap_white</item>
+        <item name="rangeLineColor">@color/ap_white</item>
+        <item name="backgroundColor">@color/ap_black</item>
+        <item name="gridBackgroundColor">@color/ap_black</item>
+        <item name="borderColor">@color/ap_transparent</item>
+    </style><style name="FullScreenGraph.Minimalist.Light">
+        <item name="domainLineColor">@color/ap_black</item>
+        <item name="rangeLineColor">@color/ap_black</item>
+        <item name="backgroundColor">@color/ap_white</item>
+        <item name="gridBackgroundColor">@color/ap_white</item>
+        <item name="borderColor">@color/ap_transparent</item>
+    </style><declare-styleable name="Plot">
+
+        <attr format="boolean" name="markupEnabled"/>
+
+        <attr name="renderMode"/>
+
+        <attr format="dimension" name="marginTop"/>
+
+        <attr format="dimension" name="marginBottom"/>
+
+        <attr format="dimension" name="marginLeft"/>
+
+        <attr format="dimension" name="marginRight"/>
+
+        <attr format="dimension" name="paddingTop"/>
+
+        <attr format="dimension" name="paddingBottom"/>
+
+        <attr format="dimension" name="paddingLeft"/>
+
+        <attr format="dimension" name="paddingRight"/>
+
+        <attr format="string" name="title"/>
+
+        <attr format="dimension" name="titleTextSize"/>
+
+        <attr format="color" name="titleTextColor"/>
+
+        <attr format="color" name="backgroundColor"/>
+
+        <attr format="color" name="borderColor"/>
+
+        <attr format="dimension" name="borderThickness"/>
+    </declare-styleable><declare-styleable name="pie.PieChart" parent="@style/Plot">
+
+        <attr format="color" name="pieBorderColor"/>
+
+        <attr format="dimension" name="pieBorderThickness"/>
+    </declare-styleable><declare-styleable name="xy.XYPlot" parent="@style/Plot">
+
+        <attr name="previewMode"/>
+
+        <attr name="domainStepMode"/>
+
+        <attr format="dimension|float|integer" name="domainStep"/>
+
+        <attr name="rangeStepMode"/>
+
+        <attr format="dimension|float|integer" name="rangeStep"/>
+
+        <attr format="string" name="domainTitle"/>
+
+        <attr format="color" name="domainTitleTextColor"/>
+
+        <attr format="dimension" name="domainTitleTextSize"/>
+
+        <attr name="domainTitleHeightMode"/>
+
+        <attr name="domainTitleWidthMode"/>
+
+        <attr format="dimension|float|integer" name="domainTitleHeight"/>
+
+        <attr format="dimension|float|integer" name="domainTitleWidth"/>
+
+        <attr name="domainTitleHorizontalPositioning"/>
+
+        <attr name="domainTitleVerticalPositioning"/>
+
+        <attr format="dimension|float|integer" name="domainTitleHorizontalPosition"/>
+
+        <attr format="dimension|float|integer" name="domainTitleVerticalPosition"/>
+
+        <attr name="domainTitleAnchor"/>
+
+        <attr format="boolean" name="domainTitleVisible"/>
+
+        <attr format="string" name="rangeTitle"/>
+
+        <attr format="color" name="rangeTitleTextColor"/>
+
+        <attr format="dimension" name="rangeTitleTextSize"/>
+
+        <attr name="rangeTitleHeightMode"/>
+
+        <attr name="rangeTitleWidthMode"/>
+
+        <attr format="dimension|float|integer" name="rangeTitleHeight"/>
+
+        <attr format="dimension|float|integer" name="rangeTitleWidth"/>
+
+        <attr name="rangeTitleHorizontalPositioning"/>
+
+        <attr name="rangeTitleVerticalPositioning"/>
+
+        <attr format="dimension|float|integer" name="rangeTitleHorizontalPosition"/>
+
+        <attr format="dimension|float|integer" name="rangeTitleVerticalPosition"/>
+
+        <attr name="rangeTitleAnchor"/>
+
+        <attr format="boolean" name="rangeTitleVisible"/>
+
+        <attr format="boolean" name="drawGridOnTop"/>
+
+        <attr name="graphHeightMode"/>
+
+        <attr name="graphWidthMode"/>
+
+        <attr format="dimension|float|integer" name="graphHeight"/>
+
+        <attr format="dimension|float|integer" name="graphWidth"/>
+
+        <attr name="graphRotation"/>
+
+        <attr name="graphHorizontalPositioning"/>
+
+        <attr name="graphVerticalPositioning"/>
+
+        <attr format="dimension|float|integer" name="graphHorizontalPosition"/>
+
+        <attr format="dimension|float|integer" name="graphVerticalPosition"/>
+
+        <attr name="graphAnchor"/>
+
+        <attr format="boolean" name="graphVisible"/>
+
+        <attr format="dimension" name="graphMarginTop"/>
+
+        <attr format="dimension" name="graphMarginBottom"/>
+
+        <attr format="dimension" name="graphMarginLeft"/>
+
+        <attr format="dimension" name="graphMarginRight"/>
+
+        <attr format="dimension" name="graphPaddingTop"/>
+
+        <attr format="dimension" name="graphPaddingBottom"/>
+
+        <attr format="dimension" name="graphPaddingLeft"/>
+
+        <attr format="dimension" name="graphPaddingRight"/>
+
+        <attr format="boolean" name="gridClippingEnabled"/>
+
+        <attr format="dimension" name="gridInsetTop"/>
+
+        <attr format="dimension" name="gridInsetBottom"/>
+
+        <attr format="dimension" name="gridInsetLeft"/>
+
+        <attr format="dimension" name="gridInsetRight"/>
+
+        <attr format="dimension" name="lineLabelInsetTop"/>
+
+        <attr format="dimension" name="lineLabelInsetBottom"/>
+
+        <attr format="dimension" name="lineLabelInsetLeft"/>
+
+        <attr format="dimension" name="lineLabelInsetRight"/>
+
+        <attr name="lineLabels"/>
+
+        <attr name="lineLabelAlignTop"/>
+
+        <attr name="lineLabelAlignBottom"/>
+
+        <attr name="lineLabelAlignLeft"/>
+
+        <attr name="lineLabelAlignRight"/>
+
+        <attr format="float" name="lineLabelRotationTop"/>
+
+        <attr format="float" name="lineLabelRotationBottom"/>
+
+        <attr format="float" name="lineLabelRotationLeft"/>
+
+        <attr format="float" name="lineLabelRotationRight"/>
+
+        <attr format="dimension" name="domainLineThickness"/>
+
+        <attr format="dimension" name="rangeLineThickness"/>
+
+        <attr format="color" name="domainLineColor"/>
+
+        <attr format="color" name="rangeLineColor"/>
+
+        <attr format="dimension" name="domainOriginLineThickness"/>
+
+        <attr format="dimension" name="rangeOriginLineThickness"/>
+
+        <attr format="color" name="domainOriginLineColor"/>
+
+        <attr format="color" name="rangeOriginLineColor"/>
+
+
+        <attr format="dimension" name="lineLabelTextSizeTop"/>
+
+        <attr format="dimension" name="lineLabelTextSizeBottom"/>
+
+        <attr format="dimension" name="lineLabelTextSizeLeft"/>
+
+        <attr format="dimension" name="lineLabelTextSizeRight"/>
+
+        <attr format="color" name="lineLabelTextColorTop"/>
+
+        <attr format="color" name="lineLabelTextColorBottom"/>
+
+        <attr format="color" name="lineLabelTextColorLeft"/>
+
+        <attr format="color" name="lineLabelTextColorRight"/>
+
+        <attr format="dimension" name="lineExtensionTop"/>
+
+        <attr format="dimension" name="lineExtensionBottom"/>
+
+        <attr format="dimension" name="lineExtensionLeft"/>
+
+        <attr format="dimension" name="lineExtensionRight"/>
+
+        <attr format="color" name="gridBackgroundColor"/>
+
+        <attr format="color" name="graphBackgroundColor"/>
+
+        <attr name="legendHeightMode"/>
+
+        <attr name="legendWidthMode"/>
+
+        <attr format="dimension|float|integer" name="legendHeight"/>
+
+        <attr format="dimension|float|integer" name="legendWidth"/>
+
+        <attr name="legendHorizontalPositioning"/>
+
+        <attr name="legendVerticalPositioning"/>
+
+        <attr format="dimension|float|integer" name="legendHorizontalPosition"/>
+
+        <attr format="dimension|float|integer" name="legendVerticalPosition"/>
+
+        <attr name="legendAnchor"/>
+
+        <attr format="dimension" name="legendTextSize"/>
+
+        <attr format="color" name="legendTextColor"/>
+
+        <attr name="legendIconHeightMode"/>
+
+        <attr name="legendIconWidthMode"/>
+
+        <attr format="dimension|float|integer" name="legendIconHeight"/>
+
+        <attr format="dimension|float|integer" name="legendIconWidth"/>
+
+        <attr format="boolean" name="legendVisible"/>
+
+        <attr format="dimension" name="domainLineExtension"/>
+
+        <attr format="dimension" name="rangeLineExtension"/>
     </declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.constraintlayout:constraintlayout:1.1.3$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\42026\.gradle\caches\transforms-2\files-2.1\a8e0610f3afab95380f0dfc0bc4abc35\constraintlayout-1.1.3\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.constraintlayout:constraintlayout:1.1.3" from-dependency="true" generated-set="androidx.constraintlayout:constraintlayout:1.1.3$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\42026\.gradle\caches\transforms-2\files-2.1\a8e0610f3afab95380f0dfc0bc4abc35\constraintlayout-1.1.3\res"><file path="C:\Users\42026\.gradle\caches\transforms-2\files-2.1\a8e0610f3afab95380f0dfc0bc4abc35\constraintlayout-1.1.3\res\values\values.xml" qualifiers=""><attr format="boolean" name="barrierAllowsGoneWidgets"/><attr format="enum" name="barrierDirection">
         <enum name="left" value="0"/>
         <enum name="right" value="1"/>
@@ -2747,87 +3293,11 @@
 
         
         <attr name="android:tileMode"/>
-    </declare-styleable><declare-styleable name="AnimatedStateListDrawableCompat">
-        
-        <attr name="android:visible"/>
-        
-        <attr name="android:variablePadding"/>
-        
-        <attr name="android:constantSize"/>
-        
-        <attr name="android:dither"/>
-        
-        <attr name="android:enterFadeDuration"/>
-        
-        <attr name="android:exitFadeDuration"/>
-        
-        
-    </declare-styleable><declare-styleable name="ColorStateListItem">
-        
-        <attr name="android:color"/>
-        
-        <attr format="float" name="alpha"/>
-        <attr name="android:alpha"/>
-    </declare-styleable><declare-styleable name="Spinner">
-        
-        <attr name="android:prompt"/>
-        
-        <attr name="popupTheme"/>
-        
-        <attr name="android:popupBackground"/>
-        
-        <attr name="android:dropDownWidth"/>
-        
-        <attr name="android:entries"/>
-    </declare-styleable><declare-styleable name="ConstraintLayout_placeholder"><attr name="emptyVisibility"/><attr name="content"/></declare-styleable><declare-styleable name="PopupWindow">
-        
-        <attr format="boolean" name="overlapAnchor"/>
-        <attr name="android:popupBackground"/>
-        <attr name="android:popupAnimationStyle"/>
     </declare-styleable><declare-styleable name="AnimatedStateListDrawableItem">
         
         <attr name="android:drawable"/>
         
         <attr name="android:id"/>
-    </declare-styleable><declare-styleable name="DrawerArrowToggle">
-        
-        <attr format="color" name="color"/>
-        
-        <attr format="boolean" name="spinBars"/>
-        
-        <attr format="dimension" name="drawableSize"/>
-        
-        <attr format="dimension" name="gapBetweenBars"/>
-        
-        <attr format="dimension" name="arrowHeadLength"/>
-        
-        <attr format="dimension" name="arrowShaftLength"/>
-        
-        <attr format="dimension" name="barLength"/>
-        
-        <attr format="dimension" name="thickness"/>
-    </declare-styleable><declare-styleable name="ActionBarLayout">
-        <attr name="android:layout_gravity"/>
-    </declare-styleable><declare-styleable name="StateListDrawable">
-        
-        <attr name="android:visible"/>
-        
-        <attr name="android:variablePadding"/>
-        
-        <attr name="android:constantSize"/>
-        
-        <attr name="android:dither"/>
-        
-        <attr name="android:enterFadeDuration"/>
-        
-        <attr name="android:exitFadeDuration"/>
-        
-        
-    </declare-styleable><declare-styleable name="ActivityChooserView">
-        
-        <attr format="string" name="initialActivityCount"/>
-        
-        <attr format="reference" name="expandActivityOverflowButtonDrawable"/>
     </declare-styleable><declare-styleable name="GradientColorItem">
         
         <attr name="android:offset"/>
@@ -3191,36 +3661,226 @@
         
         <attr format="reference" name="listChoiceIndicatorSingleAnimated"/>
 
-    </declare-styleable><declare-styleable name="ViewStubCompat">
-        
-        <attr name="android:layout"/>
-        
-        <attr name="android:inflatedId"/>
-        <attr name="android:id"/>
-    </declare-styleable><declare-styleable name="ListPopupWindow">
-        
-        <attr name="android:dropDownVerticalOffset"/>
-        
-        <attr name="android:dropDownHorizontalOffset"/>
-    </declare-styleable><declare-styleable name="TextAppearance">
-        <attr name="android:textSize"/>
-        <attr name="android:textColor"/>
-        <attr name="android:textColorHint"/>
-        <attr name="android:textColorLink"/>
-        <attr name="android:textStyle"/>
-        <attr name="android:textFontWeight"/>
-        <attr name="android:typeface"/>
-        <attr name="android:fontFamily"/>
-        <attr name="fontFamily"/>
-        <attr name="textAllCaps"/>
-        
-        <attr name="textLocale"/>
-        <attr name="android:shadowColor"/>
-        <attr name="android:shadowDy"/>
-        <attr name="android:shadowDx"/>
-        <attr name="android:shadowRadius"/>
-        
-        <attr name="fontVariationSettings"/>
+    </declare-styleable><declare-styleable name="xy.XYPlot" parent="@style/Plot">
+
+        <attr name="previewMode"/>
+
+        <attr name="domainStepMode"/>
+
+        <attr format="dimension|float|integer" name="domainStep"/>
+
+        <attr name="rangeStepMode"/>
+
+        <attr format="dimension|float|integer" name="rangeStep"/>
+
+        <attr format="string" name="domainTitle"/>
+
+        <attr format="color" name="domainTitleTextColor"/>
+
+        <attr format="dimension" name="domainTitleTextSize"/>
+
+        <attr name="domainTitleHeightMode"/>
+
+        <attr name="domainTitleWidthMode"/>
+
+        <attr format="dimension|float|integer" name="domainTitleHeight"/>
+
+        <attr format="dimension|float|integer" name="domainTitleWidth"/>
+
+        <attr name="domainTitleHorizontalPositioning"/>
+
+        <attr name="domainTitleVerticalPositioning"/>
+
+        <attr format="dimension|float|integer" name="domainTitleHorizontalPosition"/>
+
+        <attr format="dimension|float|integer" name="domainTitleVerticalPosition"/>
+
+        <attr name="domainTitleAnchor"/>
+
+        <attr format="boolean" name="domainTitleVisible"/>
+
+        <attr format="string" name="rangeTitle"/>
+
+        <attr format="color" name="rangeTitleTextColor"/>
+
+        <attr format="dimension" name="rangeTitleTextSize"/>
+
+        <attr name="rangeTitleHeightMode"/>
+
+        <attr name="rangeTitleWidthMode"/>
+
+        <attr format="dimension|float|integer" name="rangeTitleHeight"/>
+
+        <attr format="dimension|float|integer" name="rangeTitleWidth"/>
+
+        <attr name="rangeTitleHorizontalPositioning"/>
+
+        <attr name="rangeTitleVerticalPositioning"/>
+
+        <attr format="dimension|float|integer" name="rangeTitleHorizontalPosition"/>
+
+        <attr format="dimension|float|integer" name="rangeTitleVerticalPosition"/>
+
+        <attr name="rangeTitleAnchor"/>
+
+        <attr format="boolean" name="rangeTitleVisible"/>
+
+        <attr format="boolean" name="drawGridOnTop"/>
+
+        <attr name="graphHeightMode"/>
+
+        <attr name="graphWidthMode"/>
+
+        <attr format="dimension|float|integer" name="graphHeight"/>
+
+        <attr format="dimension|float|integer" name="graphWidth"/>
+
+        <attr name="graphRotation"/>
+
+        <attr name="graphHorizontalPositioning"/>
+
+        <attr name="graphVerticalPositioning"/>
+
+        <attr format="dimension|float|integer" name="graphHorizontalPosition"/>
+
+        <attr format="dimension|float|integer" name="graphVerticalPosition"/>
+
+        <attr name="graphAnchor"/>
+
+        <attr format="boolean" name="graphVisible"/>
+
+        <attr format="dimension" name="graphMarginTop"/>
+
+        <attr format="dimension" name="graphMarginBottom"/>
+
+        <attr format="dimension" name="graphMarginLeft"/>
+
+        <attr format="dimension" name="graphMarginRight"/>
+
+        <attr format="dimension" name="graphPaddingTop"/>
+
+        <attr format="dimension" name="graphPaddingBottom"/>
+
+        <attr format="dimension" name="graphPaddingLeft"/>
+
+        <attr format="dimension" name="graphPaddingRight"/>
+
+        <attr format="boolean" name="gridClippingEnabled"/>
+
+        <attr format="dimension" name="gridInsetTop"/>
+
+        <attr format="dimension" name="gridInsetBottom"/>
+
+        <attr format="dimension" name="gridInsetLeft"/>
+
+        <attr format="dimension" name="gridInsetRight"/>
+
+        <attr format="dimension" name="lineLabelInsetTop"/>
+
+        <attr format="dimension" name="lineLabelInsetBottom"/>
+
+        <attr format="dimension" name="lineLabelInsetLeft"/>
+
+        <attr format="dimension" name="lineLabelInsetRight"/>
+
+        <attr name="lineLabels"/>
+
+        <attr name="lineLabelAlignTop"/>
+
+        <attr name="lineLabelAlignBottom"/>
+
+        <attr name="lineLabelAlignLeft"/>
+
+        <attr name="lineLabelAlignRight"/>
+
+        <attr format="float" name="lineLabelRotationTop"/>
+
+        <attr format="float" name="lineLabelRotationBottom"/>
+
+        <attr format="float" name="lineLabelRotationLeft"/>
+
+        <attr format="float" name="lineLabelRotationRight"/>
+
+        <attr format="dimension" name="domainLineThickness"/>
+
+        <attr format="dimension" name="rangeLineThickness"/>
+
+        <attr format="color" name="domainLineColor"/>
+
+        <attr format="color" name="rangeLineColor"/>
+
+        <attr format="dimension" name="domainOriginLineThickness"/>
+
+        <attr format="dimension" name="rangeOriginLineThickness"/>
+
+        <attr format="color" name="domainOriginLineColor"/>
+
+        <attr format="color" name="rangeOriginLineColor"/>
+
+
+        <attr format="dimension" name="lineLabelTextSizeTop"/>
+
+        <attr format="dimension" name="lineLabelTextSizeBottom"/>
+
+        <attr format="dimension" name="lineLabelTextSizeLeft"/>
+
+        <attr format="dimension" name="lineLabelTextSizeRight"/>
+
+        <attr format="color" name="lineLabelTextColorTop"/>
+
+        <attr format="color" name="lineLabelTextColorBottom"/>
+
+        <attr format="color" name="lineLabelTextColorLeft"/>
+
+        <attr format="color" name="lineLabelTextColorRight"/>
+
+        <attr format="dimension" name="lineExtensionTop"/>
+
+        <attr format="dimension" name="lineExtensionBottom"/>
+
+        <attr format="dimension" name="lineExtensionLeft"/>
+
+        <attr format="dimension" name="lineExtensionRight"/>
+
+        <attr format="color" name="gridBackgroundColor"/>
+
+        <attr format="color" name="graphBackgroundColor"/>
+
+        <attr name="legendHeightMode"/>
+
+        <attr name="legendWidthMode"/>
+
+        <attr format="dimension|float|integer" name="legendHeight"/>
+
+        <attr format="dimension|float|integer" name="legendWidth"/>
+
+        <attr name="legendHorizontalPositioning"/>
+
+        <attr name="legendVerticalPositioning"/>
+
+        <attr format="dimension|float|integer" name="legendHorizontalPosition"/>
+
+        <attr format="dimension|float|integer" name="legendVerticalPosition"/>
+
+        <attr name="legendAnchor"/>
+
+        <attr format="dimension" name="legendTextSize"/>
+
+        <attr format="color" name="legendTextColor"/>
+
+        <attr name="legendIconHeightMode"/>
+
+        <attr name="legendIconWidthMode"/>
+
+        <attr format="dimension|float|integer" name="legendIconHeight"/>
+
+        <attr format="dimension|float|integer" name="legendIconWidth"/>
+
+        <attr format="boolean" name="legendVisible"/>
+
+        <attr format="dimension" name="domainLineExtension"/>
+
+        <attr format="dimension" name="rangeLineExtension"/>
     </declare-styleable><declare-styleable name="MenuView">
         
         <attr name="android:itemTextAppearance"/>
@@ -3319,26 +3979,6 @@
         <attr format="dimension" name="elevation"/>
         
         <attr format="reference" name="popupTheme"/>
-    </declare-styleable><declare-styleable name="MenuGroup">
-
-        
-        <attr name="android:id"/>
-
-        
-        <attr name="android:menuCategory"/>
-
-        
-        <attr name="android:orderInCategory"/>
-
-        
-        <attr name="android:checkableBehavior"/>
-
-        
-        <attr name="android:visible"/>
-
-        
-        <attr name="android:enabled"/>
-
     </declare-styleable><declare-styleable name="ActionMenuItemView">
         <attr name="android:minWidth"/>
     </declare-styleable><declare-styleable name="Toolbar">
@@ -3400,30 +4040,47 @@
         <attr name="android:layout_height"/>
         <attr name="android:layout_weight"/>
         <attr name="android:layout_gravity"/>
-    </declare-styleable><declare-styleable name="FontFamily">
-        
-        <attr format="string" name="fontProviderAuthority"/>
-        
-        <attr format="string" name="fontProviderPackage"/>
-        
-        <attr format="string" name="fontProviderQuery"/>
-        
-        <attr format="reference" name="fontProviderCerts"/>
-        
-        <attr name="fontProviderFetchStrategy">
-            
-            <enum name="blocking" value="0"/>
-            
-            <enum name="async" value="1"/>
-        </attr>
-        
-        <attr format="integer" name="fontProviderFetchTimeout">
-            
-            <enum name="forever" value="-1"/>
-        </attr>
     </declare-styleable><declare-styleable name="StateListDrawableItem">
         
         <attr name="android:drawable"/>
+    </declare-styleable><declare-styleable name="pie.PieChart" parent="@style/Plot">
+
+        <attr format="color" name="pieBorderColor"/>
+
+        <attr format="dimension" name="pieBorderThickness"/>
+    </declare-styleable><declare-styleable name="Plot">
+
+        <attr format="boolean" name="markupEnabled"/>
+
+        <attr name="renderMode"/>
+
+        <attr format="dimension" name="marginTop"/>
+
+        <attr format="dimension" name="marginBottom"/>
+
+        <attr format="dimension" name="marginLeft"/>
+
+        <attr format="dimension" name="marginRight"/>
+
+        <attr format="dimension" name="paddingTop"/>
+
+        <attr format="dimension" name="paddingBottom"/>
+
+        <attr format="dimension" name="paddingLeft"/>
+
+        <attr format="dimension" name="paddingRight"/>
+
+        <attr format="string" name="title"/>
+
+        <attr format="dimension" name="titleTextSize"/>
+
+        <attr format="color" name="titleTextColor"/>
+
+        <attr format="color" name="backgroundColor"/>
+
+        <attr format="color" name="borderColor"/>
+
+        <attr format="dimension" name="borderThickness"/>
     </declare-styleable><declare-styleable name="AppCompatTextView">
         
         <attr format="reference|boolean" name="textAllCaps"/>
@@ -3478,6 +4135,270 @@
             <enum name="screen" value="15"/>
             
             <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ButtonBarLayout">
+        
+        <attr format="boolean" name="allowStacking"/>
+    </declare-styleable><declare-styleable name="ViewBackgroundHelper">
+        <attr name="android:background"/>
+        
+        <attr format="color" name="backgroundTint"/>
+
+        
+        <attr name="backgroundTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ConstraintSet"><attr name="android:orientation"/><attr name="android:id"/><attr name="android:visibility"/><attr name="android:alpha"/><attr name="android:elevation"/><attr name="android:rotation"/><attr name="android:rotationX"/><attr name="android:rotationY"/><attr name="android:scaleX"/><attr name="android:scaleY"/><attr name="android:transformPivotX"/><attr name="android:transformPivotY"/><attr name="android:translationX"/><attr name="android:translationY"/><attr name="android:translationZ"/><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_marginStart"/><attr name="android:layout_marginBottom"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginEnd"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginRight"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/><attr name="barrierDirection"/><attr name="constraint_referenced_ids"/><attr name="android:maxHeight"/><attr name="android:maxWidth"/><attr name="android:minHeight"/><attr name="android:minWidth"/><attr name="barrierAllowsGoneWidgets"/><attr name="chainUseRtl"/></declare-styleable><declare-styleable name="AppCompatImageView">
+        <attr name="android:src"/>
+        
+        <attr format="reference" name="srcCompat"/>
+
+        
+        <attr format="color" name="tint"/>
+
+        
+        <attr name="tintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ConstraintLayout_Layout"><attr name="android:orientation"/><attr name="android:minWidth"/><attr name="android:minHeight"/><attr name="android:maxWidth"/><attr name="android:maxHeight"/><attr name="layout_optimizationLevel"/><attr name="constraintSet"/><attr name="barrierDirection"/><attr name="barrierAllowsGoneWidgets"/><attr name="constraint_referenced_ids"/><attr name="chainUseRtl"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/></declare-styleable><declare-styleable name="PopupWindowBackgroundState">
+        
+        <attr format="boolean" name="state_above_anchor"/>
+    </declare-styleable><declare-styleable name="ActionMode">
+        
+        <attr name="titleTextStyle"/>
+        
+        <attr name="subtitleTextStyle"/>
+        
+        <attr name="background"/>
+        
+        <attr name="backgroundSplit"/>
+        
+        <attr name="height"/>
+        
+        <attr format="reference" name="closeItemLayout"/>
+    </declare-styleable><declare-styleable name="SwitchCompat">
+        
+        <attr name="android:thumb"/>
+        
+        <attr format="color" name="thumbTint"/>
+        
+        <attr name="thumbTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+        
+        <attr format="reference" name="track"/>
+        
+        <attr format="color" name="trackTint"/>
+        
+        <attr name="trackTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+        
+        <attr name="android:textOn"/>
+        
+        <attr name="android:textOff"/>
+        
+        <attr format="dimension" name="thumbTextPadding"/>
+        
+        <attr format="reference" name="switchTextAppearance"/>
+        
+        <attr format="dimension" name="switchMinWidth"/>
+        
+        <attr format="dimension" name="switchPadding"/>
+        
+        <attr format="boolean" name="splitTrack"/>
+        
+        <attr format="boolean" name="showText"/>
+    </declare-styleable><declare-styleable name="AnimatedStateListDrawableCompat">
+        
+        <attr name="android:visible"/>
+        
+        <attr name="android:variablePadding"/>
+        
+        <attr name="android:constantSize"/>
+        
+        <attr name="android:dither"/>
+        
+        <attr name="android:enterFadeDuration"/>
+        
+        <attr name="android:exitFadeDuration"/>
+        
+        
+    </declare-styleable><declare-styleable name="ColorStateListItem">
+        
+        <attr name="android:color"/>
+        
+        <attr format="float" name="alpha"/>
+        <attr name="android:alpha"/>
+    </declare-styleable><declare-styleable name="Spinner">
+        
+        <attr name="android:prompt"/>
+        
+        <attr name="popupTheme"/>
+        
+        <attr name="android:popupBackground"/>
+        
+        <attr name="android:dropDownWidth"/>
+        
+        <attr name="android:entries"/>
+    </declare-styleable><declare-styleable name="ConstraintLayout_placeholder"><attr name="emptyVisibility"/><attr name="content"/></declare-styleable><declare-styleable name="PopupWindow">
+        
+        <attr format="boolean" name="overlapAnchor"/>
+        <attr name="android:popupBackground"/>
+        <attr name="android:popupAnimationStyle"/>
+    </declare-styleable><declare-styleable name="DrawerArrowToggle">
+        
+        <attr format="color" name="color"/>
+        
+        <attr format="boolean" name="spinBars"/>
+        
+        <attr format="dimension" name="drawableSize"/>
+        
+        <attr format="dimension" name="gapBetweenBars"/>
+        
+        <attr format="dimension" name="arrowHeadLength"/>
+        
+        <attr format="dimension" name="arrowShaftLength"/>
+        
+        <attr format="dimension" name="barLength"/>
+        
+        <attr format="dimension" name="thickness"/>
+    </declare-styleable><declare-styleable name="ActionBarLayout">
+        <attr name="android:layout_gravity"/>
+    </declare-styleable><declare-styleable name="StateListDrawable">
+        
+        <attr name="android:visible"/>
+        
+        <attr name="android:variablePadding"/>
+        
+        <attr name="android:constantSize"/>
+        
+        <attr name="android:dither"/>
+        
+        <attr name="android:enterFadeDuration"/>
+        
+        <attr name="android:exitFadeDuration"/>
+        
+        
+    </declare-styleable><declare-styleable name="ActivityChooserView">
+        
+        <attr format="string" name="initialActivityCount"/>
+        
+        <attr format="reference" name="expandActivityOverflowButtonDrawable"/>
+    </declare-styleable><declare-styleable name="ViewStubCompat">
+        
+        <attr name="android:layout"/>
+        
+        <attr name="android:inflatedId"/>
+        <attr name="android:id"/>
+    </declare-styleable><declare-styleable name="ListPopupWindow">
+        
+        <attr name="android:dropDownVerticalOffset"/>
+        
+        <attr name="android:dropDownHorizontalOffset"/>
+    </declare-styleable><declare-styleable name="TextAppearance">
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textColorHint"/>
+        <attr name="android:textColorLink"/>
+        <attr name="android:textStyle"/>
+        <attr name="android:textFontWeight"/>
+        <attr name="android:typeface"/>
+        <attr name="android:fontFamily"/>
+        <attr name="fontFamily"/>
+        <attr name="textAllCaps"/>
+        
+        <attr name="textLocale"/>
+        <attr name="android:shadowColor"/>
+        <attr name="android:shadowDy"/>
+        <attr name="android:shadowDx"/>
+        <attr name="android:shadowRadius"/>
+        
+        <attr name="fontVariationSettings"/>
+    </declare-styleable><declare-styleable name="MenuGroup">
+
+        
+        <attr name="android:id"/>
+
+        
+        <attr name="android:menuCategory"/>
+
+        
+        <attr name="android:orderInCategory"/>
+
+        
+        <attr name="android:checkableBehavior"/>
+
+        
+        <attr name="android:visible"/>
+
+        
+        <attr name="android:enabled"/>
+
+    </declare-styleable><declare-styleable name="FontFamily">
+        
+        <attr format="string" name="fontProviderAuthority"/>
+        
+        <attr format="string" name="fontProviderPackage"/>
+        
+        <attr format="string" name="fontProviderQuery"/>
+        
+        <attr format="reference" name="fontProviderCerts"/>
+        
+        <attr name="fontProviderFetchStrategy">
+            
+            <enum name="blocking" value="0"/>
+            
+            <enum name="async" value="1"/>
+        </attr>
+        
+        <attr format="integer" name="fontProviderFetchTimeout">
+            
+            <enum name="forever" value="-1"/>
         </attr>
     </declare-styleable><declare-styleable name="MenuItem">
 
@@ -3588,30 +4509,7 @@
             <enum name="add" value="16"/>
         </attr>
 
-    </declare-styleable><declare-styleable name="ButtonBarLayout">
-        
-        <attr format="boolean" name="allowStacking"/>
-    </declare-styleable><declare-styleable name="LinearConstraintLayout"><attr name="android:orientation"/></declare-styleable><declare-styleable name="ViewBackgroundHelper">
-        <attr name="android:background"/>
-        
-        <attr format="color" name="backgroundTint"/>
-
-        
-        <attr name="backgroundTintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
-    </declare-styleable><declare-styleable name="AnimatedStateListDrawableTransition">
+    </declare-styleable><declare-styleable name="LinearConstraintLayout"><attr name="android:orientation"/></declare-styleable><declare-styleable name="AnimatedStateListDrawableTransition">
         
         <attr name="android:fromId"/>
         
@@ -3620,29 +4518,6 @@
         <attr name="android:drawable"/>
         
         <attr name="android:reversible"/>
-    </declare-styleable><declare-styleable name="ConstraintSet"><attr name="android:orientation"/><attr name="android:id"/><attr name="android:visibility"/><attr name="android:alpha"/><attr name="android:elevation"/><attr name="android:rotation"/><attr name="android:rotationX"/><attr name="android:rotationY"/><attr name="android:scaleX"/><attr name="android:scaleY"/><attr name="android:transformPivotX"/><attr name="android:transformPivotY"/><attr name="android:translationX"/><attr name="android:translationY"/><attr name="android:translationZ"/><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_marginStart"/><attr name="android:layout_marginBottom"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginEnd"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginRight"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/><attr name="barrierDirection"/><attr name="constraint_referenced_ids"/><attr name="android:maxHeight"/><attr name="android:maxWidth"/><attr name="android:minHeight"/><attr name="android:minWidth"/><attr name="barrierAllowsGoneWidgets"/><attr name="chainUseRtl"/></declare-styleable><declare-styleable name="AppCompatImageView">
-        <attr name="android:src"/>
-        
-        <attr format="reference" name="srcCompat"/>
-
-        
-        <attr format="color" name="tint"/>
-
-        
-        <attr name="tintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
     </declare-styleable><declare-styleable name="View">
         
         <attr format="dimension" name="paddingStart"/>
@@ -3654,9 +4529,6 @@
         <attr format="reference" name="theme"/>
         
         <attr name="android:theme"/>
-    </declare-styleable><declare-styleable name="ConstraintLayout_Layout"><attr name="android:orientation"/><attr name="android:minWidth"/><attr name="android:minHeight"/><attr name="android:maxWidth"/><attr name="android:maxHeight"/><attr name="layout_optimizationLevel"/><attr name="constraintSet"/><attr name="barrierDirection"/><attr name="barrierAllowsGoneWidgets"/><attr name="constraint_referenced_ids"/><attr name="chainUseRtl"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/></declare-styleable><declare-styleable name="PopupWindowBackgroundState">
-        
-        <attr format="boolean" name="state_above_anchor"/>
     </declare-styleable><declare-styleable name="FontFamilyFont">
         
         <attr name="fontStyle">
@@ -3734,19 +4606,6 @@
         
         <attr format="reference" name="submitBackground"/>
         <attr name="android:focusable"/>
-    </declare-styleable><declare-styleable name="ActionMode">
-        
-        <attr name="titleTextStyle"/>
-        
-        <attr name="subtitleTextStyle"/>
-        
-        <attr name="background"/>
-        
-        <attr name="backgroundSplit"/>
-        
-        <attr name="height"/>
-        
-        <attr format="reference" name="closeItemLayout"/>
     </declare-styleable><declare-styleable name="ActionMenuView">
         
     </declare-styleable><declare-styleable name="CompoundButton">
@@ -3771,61 +4630,6 @@
             
             <enum name="add" value="16"/>
         </attr>
-    </declare-styleable><declare-styleable name="SwitchCompat">
-        
-        <attr name="android:thumb"/>
-        
-        <attr format="color" name="thumbTint"/>
-        
-        <attr name="thumbTintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
-        
-        <attr format="reference" name="track"/>
-        
-        <attr format="color" name="trackTint"/>
-        
-        <attr name="trackTintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
-        
-        <attr name="android:textOn"/>
-        
-        <attr name="android:textOff"/>
-        
-        <attr format="dimension" name="thumbTextPadding"/>
-        
-        <attr format="reference" name="switchTextAppearance"/>
-        
-        <attr format="dimension" name="switchMinWidth"/>
-        
-        <attr format="dimension" name="switchPadding"/>
-        
-        <attr format="boolean" name="splitTrack"/>
-        
-        <attr format="boolean" name="showText"/>
     </declare-styleable><declare-styleable name="AppCompatTextHelper">
         <attr name="android:drawableLeft"/>
         <attr name="android:drawableTop"/>
